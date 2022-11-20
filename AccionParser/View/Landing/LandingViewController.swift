@@ -67,10 +67,10 @@ extension LandingViewController: UITableViewDataSource {
         return (self.user != nil) ? 1 : 0
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return user?.items.count ?? 0
+        return user?.items?.count ?? 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let item = user?.items[indexPath.row]
+        let item = user?.items?[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "userCell") as! UserTableViewCell
         cell.configureWithItem(item: item)
         return cell
@@ -79,7 +79,7 @@ extension LandingViewController: UITableViewDataSource {
 
 extension LandingViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let item = self.user?.items[indexPath.row] else { return }
+        guard let item = self.user?.items?[indexPath.row] else { return }
         viewModel.showDetail(item: item)
     }
 }

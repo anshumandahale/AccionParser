@@ -25,7 +25,8 @@ class DetailViewModel: DetailViewModelProtocol {
     }
     
     func viewLoaded() {
-        let str = self.item.tags.joined(separator: "\n")
+        guard let arr = self.item.tags else { return }
+        let str = arr.joined(separator: "\n")
         outputDelegate?.showItemDetails(tags: str)
     }
 }

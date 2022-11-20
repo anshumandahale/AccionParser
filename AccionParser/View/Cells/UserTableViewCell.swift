@@ -24,7 +24,7 @@ class UserTableViewCell: UITableViewCell {
         guard let owner = item?.owner else { return }
         self.label.text = owner.displayName
         self.userImageView.kf.indicatorType = .activity
-        guard let url = URL(string: owner.profileImage) else { return }
+        guard let urlStr = owner.profileImage, let url = URL(string: urlStr) else { return }
         self.userImageView.kf.setImage(with: url)
     }
 }
