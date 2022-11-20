@@ -71,6 +71,7 @@
 		FCB4C2E8292A4EE600CCABC3 /* MockUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserService.swift; sourceTree = "<group>"; };
 		FCB4C2EC292A619E00CCABC3 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = SOURCE_ROOT; };
 		FCB4C2EF292A69A600CCABC3 /* DetailModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModelTest.swift; sourceTree = "<group>"; };
+		FCB4C2F2292A72E500CCABC3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FCE19415292A21BB0054A551 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +114,7 @@
 		FC07FBD5292648F900D77443 = {
 			isa = PBXGroup;
 			children = (
+				FCB4C2F2292A72E500CCABC3 /* README.md */,
 				FC07FBE0292648F900D77443 /* AccionParser */,
 				FCB4C2DC292A4CFC00CCABC3 /* AccionParserTests */,
 				FC07FBDF292648F900D77443 /* Products */,
